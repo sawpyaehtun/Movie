@@ -196,6 +196,9 @@
 		D02EA930233CE9C9004EB1BF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D0AD18A7233E6A2B00CA65C0 /* MovieDetailViewController.xib */,
+				D0C984B6233BD7EB00CFA657 /* LaunchScreen.storyboard */,
+				D0C984AE233BD7EA00CFA657 /* Main.storyboard */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -240,7 +243,6 @@
 				D02EA93B233CFC33004EB1BF /* SearchViewController.swift */,
 				D02EA93D233CFC62004EB1BF /* BookMarkViewController.swift */,
 				D0AD18A6233E6A2B00CA65C0 /* MovieDetailViewController.swift */,
-				D0AD18A7233E6A2B00CA65C0 /* MovieDetailViewController.xib */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -318,9 +320,7 @@
 				D02EA930233CE9C9004EB1BF /* views */,
 				D0C984A8233BD7EA00CFA657 /* AppDelegate.swift */,
 				D0C984AA233BD7EA00CFA657 /* SceneDelegate.swift */,
-				D0C984AE233BD7EA00CFA657 /* Main.storyboard */,
 				D0C984B4233BD7EB00CFA657 /* Assets.xcassets */,
-				D0C984B6233BD7EB00CFA657 /* LaunchScreen.storyboard */,
 				D0C984B9233BD7EB00CFA657 /* Info.plist */,
 				D0C984B1233BD7EA00CFA657 /* Movie.xcdatamodeld */,
 			);

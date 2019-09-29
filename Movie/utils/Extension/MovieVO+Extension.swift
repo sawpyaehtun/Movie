@@ -33,7 +33,6 @@ extension MovieVO{
                 self.genreIds?.forEach({ (id) in
                     movieCDE.addToGenre(GenreModel.shared.getGenreCDEById(genreId: id)!)
                 })
-        
         return movieCDE
     }
 }

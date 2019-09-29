@@ -29,16 +29,12 @@ class BookMarkViewController: BaseViewController {
     }
     
     func getBookMarkList() {
-        viewModel.getBookMarkList {
-            
-        }
+        viewModel.getmoviesInBookmark()
     }
     
     override func bindData() {
-        viewModel.bookmarkList.subscribe(onNext: { (bookmarkList) in
-            self.movieList = bookmarkList.map { (bookmarkVO) -> MovieVO in
-                return bookmarkVO.movie!
-            }
+        viewModel.moviesInBookmark.subscribe(onNext: { (movieVOs) in
+            self.movieList = movieVOs
             }).disposed(by: disposableBag)
     }
     

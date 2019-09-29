@@ -12,12 +12,11 @@ import RxSwift
 
 class BookMarkViewModel : BaseViewModel {
     
-    var bookmarkList = BehaviorRelay<[BookMarkVO]>(value: [])
+    var moviesInBookmark = BehaviorRelay<[MovieVO]>(value: [])
     
-    func getBookMarkList(success : @escaping () -> Void) {
-        BookmarkModel.shared.getBookmarkList { (bookmarkVOs) in
-            self.bookmarkList.accept(bookmarkVOs)
-            success()
+    func getmoviesInBookmark() {
+        BookmarkModel.shared.getMoviesInBookMark { (movieVOs) in
+            self.moviesInBookmark.accept(movieVOs)
         }
     }
     

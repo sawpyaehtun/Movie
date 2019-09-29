@@ -46,7 +46,6 @@ class GenreModel {
         
         genreCDE.id = Int32(genreVO.id ?? 0)
         genreCDE.name = genreVO.name
-        
         PersistenceManager.shared.saveContext()
     }
     
